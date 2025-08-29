@@ -55,6 +55,7 @@ def main():
         user_input = input("Enter Calculation ( + - * / ) or Command (history, clear, exit) = ").lower()
         if user_input == "exit":
             print("THANKYOU \U0001F607 Goodbye...")
+            break
         elif user_input == "history":
             show_history()
         elif user_input == "clear":
@@ -65,6 +66,7 @@ def main():
 main()
 
     
+
 
 
 
