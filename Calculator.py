@@ -21,7 +21,8 @@ def save_history(equation , result):
     file.close()
 
 def calculate(user_input):
-    parts = user_input.split()
+    part = list(user_input)
+    parts = list(filter(lambda x: x != " ", part))
     
     if len(parts) != 3:
         print("INVALID INPUT. Use formet: Number Operator Number (e.g. 8 + 8)")
@@ -64,9 +65,3 @@ def main():
             calculate(user_input)
 
 main()
-
-    
-
-
-
-
